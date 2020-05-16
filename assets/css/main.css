@@ -3306,9 +3306,14 @@ section {
 	color: #888888;	
 }
 section ul.default {
-
 	list-style: square;
-	/* text-align: left; */
+}
+
+@media screen and (max-width: 600px) { 
+	section ul.default {
+		columns: 1;
+		text-align: justify;
+	}
 }
 
 div .gallery {
