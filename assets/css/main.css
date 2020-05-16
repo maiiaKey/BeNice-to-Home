@@ -2299,7 +2299,7 @@ input, select, textarea {
 		}
 
 	ul.default {
-		list-style: disc;
+		list-style: square;
 		padding-left: 1em;
 		columns: 2;
 	}
@@ -3351,6 +3351,18 @@ div .clients {
 	flex-direction: column;
 	flex-flow: column wrap;
 	align-content: stretch;
+}
+
+@media screen and (max-width: 750px) { 
+	div .clients {
+		height: 250px;
+	}
+}
+
+@media screen and (max-width: 450px) { 
+	div .clients {
+		height: 350px;
+	}
 }
 
 .clients > a {
